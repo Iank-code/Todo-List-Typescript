@@ -1,6 +1,6 @@
 import React from "react";
 import { Todo } from "../Model.js";
-import { FiEdit } from "react-icons/fi";
+// import { FiEdit } from "react-icons/fi";
 
 type Props = {
   todo: Todo;
@@ -15,7 +15,7 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
 
       <div>
         <span className="icon">
-          <FiEdit />
+          {/* <FiEdit /> */}
         </span>
         <span className="icon"></span>
         <span className="icon"></span>
