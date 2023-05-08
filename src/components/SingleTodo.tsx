@@ -9,14 +9,14 @@ type Props = {
 };
 
 const SingleTodo = ({ todo, todos, setTodos }: Props) => {
+  console.log(todos);
+
   return (
-    <form className="todos_single">
+    <form className="todos_single" onSubmit={() => setTodos([])}>
       <span className="todos_single_text">{todo.todo}</span>
 
       <div>
-        <span className="icon">
-          {/* <FiEdit /> */}
-        </span>
+        <span className="icon">{/* <FiEdit /> */}</span>
         <span className="icon"></span>
         <span className="icon"></span>
       </div>
